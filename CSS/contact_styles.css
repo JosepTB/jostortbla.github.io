@@ -1,0 +1,115 @@
+/*------ CONTACT STYLES ------*/
+#cuerpo {
+    overflow: hidden;
+    padding-left: 10%;
+    padding-bottom: 30px;
+}
+
+.oriframa {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border-color: solid black;
+}
+#formulario {    
+}
+#formulario h3{
+    color: #111;
+    font-size: 21px;
+    font-weight: 900;
+    margin: 1%;
+}
+#formulario p{
+    margin-top: 10px;
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 332px;
+    padding-left: 3%;
+}
+#formulario form{
+    margin-top: 30px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 5% 5% 5%;
+}
+
+#formulario form label{
+    width:40%;
+    display: inline-block;    
+    background-color: #000;
+    color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 3px 8px;
+    font-size: 13px;
+}
+
+#formulario form input, select{
+    width:50%;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#formulario form textarea{
+    display: block;
+    width:80%;
+    height: 120px;
+    padding: 2%;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#formulario form input[type=submit]{
+        width:50%;
+    background-color: black;
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 8px;
+}
+/*---HOVERS---*/
+#formulario form input[type=submit]:HOVER{
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 3px 8px;
+}
+#formulario form textarea:hover{    
+     border-color: red; }
+
+#formulario form select:hover{    
+     border-color: red;
+    }
+#formulario form input:hover{
+    border-color: red;
+}
+#formulario form label:hover {
+        background-color: red;
+}
+/*---MOBILE---*/
+@media only screen and (min-width: 0px) {
+    #formulario {
+    width: 50%;
+}
+    #formulario p{ font-size: 9px; }
+ #formulario h3{ font-size: 10px; }
+    
+}
+/*---TABLET---*/
+@media only screen and (min-width: 400px) {
+    #formulario {
+    width: 60%;
+}
+    #formulario p{ font-size: 12px; }
+ #formulario h3{ font-size: 15px; }
+    
+}
+/*---PC---*/
+@media only screen and (min-width: 769px) { 
+  #formulario {
+    width: 75%;
+}
+      #formulario p{ font-size: 16px; }
+    #formulario h3{ font-size: 18px; } }

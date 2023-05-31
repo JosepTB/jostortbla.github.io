@@ -1,0 +1,67 @@
+/*--- ABOUT STYLES ---*/
+
+.centrado{ margin: 0 auto;}
+/*--------------- MAIN ------------------------------------*/
+#cuerpo {
+     background-color: #000;
+}
+#test {
+    text-align: center;
+    padding-bottom: 5%;
+     padding-top: 30px;
+    background: transparent url(../img/general/footer.gif) no-repeat center bottom;
+    background-size: 100%; 
+}
+#test h1 {  
+    text-align: center;
+    font-size: 30px; 
+    line-height: 45px;
+    font-weight: 600;
+} 
+#test h2 {  
+    text-align: center;
+    font-size: 20px; 
+    line-height: 30px;
+    font-weight: 500;
+} 
+#test p { 
+    text-align: center;
+    margin-top: 8px;
+    line-height: 25px;
+    font-weight: 100}
+
+#boton {
+    color: red;
+    background-color: black;
+    width: 35%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: red;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  font-size: 50px;
+}
+
+
+/*--TABLET --*/
+    table {
+      border-collapse: collapse;    
+        margin: 0 auto;
+                width: 50%;
+    }
+    
+    th, td {
+      text-align: left;
+      margin: 20px;
+      padding: 5px;
+      border: 1px solid black;
+    }
+    
+    th {
+      background-color: red;
+      color: white;
+    }

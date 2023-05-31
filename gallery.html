@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata, common styles & index styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/common_styles.css">
+    <link rel="stylesheet" href="CSS/gallery_style.css">
+</head>
+<body>
+    <!-- HTML header -->
+    <div id="c_contenido">
+    <div id="contenido">   
+        <div id="cabecera">
+            <img src="img/general/logo.png" id="husar" alt="An hussar head with a shako and a big moustache"> 
+            <a href=""></a>
+            <ul>
+                <li class="col-2 col-s-2"><a href="index.html">HOME</a></li>
+                <li class="col-2 col-s-2"><a href="about.html">ABOUT</a></li>
+                <li class="col-2 col-s-2"><a href="contact.html">CONTACT</a></li>
+                <li class="col-2 col-s-2"><a href="gallery.html">GALLERY</a></li>
+            </ul>
+             <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    </div>
+                         <!-- Sidebar -->
+                <div id="main">
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="gallery.html">GALLERY</a>
+</div>
+ <!-- Script -->
+  <script>
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}</script>
+</div>
+               <!-- Title -->
+            <aside id="titulo"><h2>Gallery</h2>
+                <p>Enjoy our gallant gallery today! Natura nihil frustra facit.</p></aside>
+                <!-- Main content -->
+        <main class="container1">
+            <div class="col-s-5 col-5">
+                <a href="img/gallery/foto1.jpg">
+               <img src="img/gallery/foto1.jpg" alt="Husar 1">
+                <div class="description"> First image</div></a>
+            </div>
+            
+            <div class="col-s-5 col-5">
+                <a href="img/gallery/foto2.jpg"><img src="img/gallery/foto2.jpg" alt="Husar 2">
+                <div class="description"> Second image</div></a>
+            </div>
+            
+            <div class="col-s-4 col-4">
+                <a href="img/gallery/foto3.jpg"><img src="img/gallery/foto3.jpg" alt="Husar 3">
+                <div class="description"> Third image</div></a>
+            </div>
+            
+            <div class="col-s-4 col-4">
+                <a href="img/gallery/foto4.jpg"><img src="img/gallery/foto4.jpg" alt="Husar 4">
+                <div class="description"> Fourth image</div></a>
+            </div>
+            
+            <div class="col-s-5 col-5">
+                <a href="img/gallery/foto5.jpg"><img src="img/gallery/foto5.jpg" alt="Husar 5">
+                <div class="description"> Fifth image</div></a>
+            </div>
+            
+            <div class="col-s-5 col-5">
+                <a href="img/gallery/foto6.jpg"><img src="img/gallery/foto6.jpg" alt="Husar 6">
+                <div class="description">Sixth image</div></a>
+            </div>
+        </main>          </div>
+
+    <!-- Footer-->
+   <div id="c_pie">
+  <div class="boton">
+    <button class="menudrop">Product examples</button>
+    <div class="boton-content">
+      <a href="#">Cavalry saber</a>
+      <a href="#">Mounting boots</a>
+      <a href="#">Harnesses and others</a>
+    </div>
+  </div>
+  <div id="pie" class="centrado">
+    <div class="col">
+      <h4>© Sabre Studios. All Rights Reserved</h4>
+      <img src="img/general/sabres.png" alt="Sword">
+    </div>
+    <div class="col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index_.html">// Home</a></li>
+        <li><a href="about.html">// About</a></li>
+        <li><a href="contact.html">// Contact</a></li>
+        <li><a href="gallery.html">// Gallery</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="index_.html">// Blog</a></li>
+        <li><a href="https://www.facebook.com/">// Facebook</a></li>
+        <li><a href="https://www.twitter.com/">// Twitter</a></li>
+        <li><a href="https://www.instagram.com">// Instagram</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <p>C/ de José María Haro, 63, 46022 València, Valencia<br>
+        <a href="tel:961206105">// p. 961 20 61 05</a> // <a href="mailto:hello@scarletstudio.com">e. hello@scarletstudio.com</a>
+      </p>
+      <div id="book" class="bookmark">
+        <p><a href='#contenido'>↑ Go up! ↑</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+        </body>   
+</html>

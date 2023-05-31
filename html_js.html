@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Test de aptitudes y conocimientos</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+// Imprenta
+if (document.getElementById('p12').checked==true) {p1=1}
+else {p1=0}
+// Flama
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+// Calendario
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+// Carro
+if (document.getElementById('p42').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert("Has tenido un total de... " + nota + " aciertos.");
+}
+</script>
+</head>
+<body>
+<h2>Test de aptitudes</h2>
+<div><h3>Por favor, debes tener en cuenta que los resultados de tu test desaparecerán una vez los envíes.</h3>
+<p>¡Ten en cuenta también que debes marcar el botón para que tu respuesta se cuente como válida!</p></div>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>¿En qué año se montó la primera imprenta de tipos móviles?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 1315, por Ramón Llull</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p12"> 1450, por Guttenberg (Correcta)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 2001, por Stanley Kubrick</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 1000, por el Papa Silvestre II</p>
+ 
+<p>¿Cómo se llama el colorido trozo de tela que los húsares llevan en su chacó?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Fueguecillo</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> Flama (Correcta)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Trozo de tela</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Napoleónida</p>
+ 
+<p>¿Qué mes no pertenece al calendario republicano francés?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> Termidor</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Floreal</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> Liminal (Correcta)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> Brumario</p>
+ 
+<p>¿De qué medio de transporte cayó el dios Faetón según la mitología griega?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> Un tacataca</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p42"> El carro de su padre Helios (Correcta)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> Una bicicleta</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> Un burrito</p>
+<hr>
+<p><input type="button" value="RESULTADO" onclick="resultado()"/></p>
+</form>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+// Imprenta
+if (document.getElementById('p12').checked==true) {p1=1}
+else {p1=0}
+// Flama
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+// Calendario
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+// Carro
+if (document.getElementById('p42').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert("Has tenido un total de... " + nota + " aciertos.");
+}
+</script>
+</body>
+</html>

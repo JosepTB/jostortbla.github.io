@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE content [
+  <!ELEMENT content (brigade, section+)>
+  <!ELEMENT brigade (cavalry+)>
+  <!ELEMENT cavalry (rider, horse, race, colour)>
+  <!ELEMENT rider (#PCDATA)>
+  <!ELEMENT horse (#PCDATA)>
+  <!ELEMENT race (#PCDATA)>
+  <!ELEMENT colour (#PCDATA)>
+  <!ELEMENT section (title?, note*, question*)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT note (#PCDATA)>
+  <!ELEMENT question (text, option+)>
+  <!ELEMENT text (#PCDATA)>
+  <!ELEMENT option (#PCDATA)>
+  <!ATTLIST option correct (true | false) #REQUIRED>
+]>
+
+
+<content>
+<brigade>
+
+<cavalry>
+    <rider>Arjan</rider>
+    <horse>Naga</horse>
+    <race>Hannoverian</race>
+    <colour>White</colour>
+  </cavalry>
+
+<cavalry>
+    <rider>John Townshend</rider>
+    <horse>Imperious</horse>
+    <race>Clydesdale</race>
+    <colour>Black</colour>
+  </cavalry>
+    
+<cavalry>
+    <rider>Cardigan</rider>
+    <horse>Roland</horse>
+    <race>Charger</race>
+    <colour>Maroon</colour>
+  </cavalry>
+
+</brigade>
+
+ <!-- This is XML represents the page about-->
+  
+    <section> 
+    <title>Aptitude test</title>
+    <note>Please, mind that the answers you selected on the test will disappear once you submit them.</note>
+    <note>Take care! You need to mark the button left of your answer to get it correctly validated!</note>
+  </section>
+  <section>
+    <question> 
+      <text>In what year was the first movable type printing press set up?</text>
+      <option correct="false">1315, Ramón Llull</option>
+      <option correct="true">1450, Guttenberg</option>
+      <option correct="false">2001, Stanley Kubrick</option>
+      <option correct="false">1000, Pope Silvester II</option>
+    </question>
+  </section>
+  <section>
+    <question>
+      <text>What is the name of the colorful piece of cloth that the hussars wear in their shakos?</text>
+      <option correct="false">Littlefire</option>
+      <option correct="true">Flame</option>
+      <option correct="false">Piece of cloth</option>
+      <option correct="false">Napoleonide</option>
+    </question>
+  </section>
+  <section>
+    <question>
+      <text>What month does not belong to the French republican calendar?</text>
+      <option correct="false">Termidor</option>
+      <option correct="false">Floreal</option>
+      <option correct="true">Liminal</option>
+      <option correct="false">Brumarie</option>
+    </question>
+  </section>
+  <section>
+    <question>
+      <text>From which transport did the god Phaethon fall from according to Greek mythology?</text>
+      <option correct="false">A baby walker</option>
+      <option correct="true">His father chariot</option>
+      <option correct="false">A bicycle</option>
+      <option correct="false">A little donkey</option>
+    </question>
+  </section>
+</content>

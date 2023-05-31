@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Metadata, common styles & index styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/common_styles.css">
+    <link rel="stylesheet" href="CSS/contact_styles.css">
+</head>
+<body>
+    <!-- HTML header -->
+    <div id="c_contenido">
+    <div id="contenido">   
+        <div id="cabecera">
+            <img src="img/general/logo.png" id="husar" alt="An hussar head with a shako and a big moustache"> 
+            <a href=""></a>
+            <ul>
+                <li class="col-2 col-s-2"><a href="index.html">HOME</a></li>
+                <li class="col-2 col-s-2"><a href="about.html">ABOUT</a></li>
+                <li class="col-2 col-s-2"><a href="contact.html">CONTACT</a></li>
+                <li class="col-2 col-s-2"><a href="gallery.html">GALLERY</a></li>
+            </ul>
+             <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    </div>
+                         <!-- Sidebar -->
+                <div id="main">
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="gallery.html">GALLERY</a>
+</div>
+ <!-- Script -->
+  <script>
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}</script>
+</div>
+            <!-- Contact info -->
+            <aside id="cuerpo" class="imagen_inferior_cuerpo">
+                           
+<iframe src="./gallery.html" class="oriframa" title="Iframe Gallery"></iframe>
+
+                            
+         <div id="formulario">
+                         <h3>Comments? Suggestions? Interesting projects?</h3>
+                        <p>Please drop us a line using our email form or just stay in the loop by joining our mailing list.</p>
+                        <p>You can watch our gallery to get some inspiration while you complete the contact form.</p>
+                        <form>
+                            <label id="nombre">Name and Surnames</label>
+                            <input type="text">
+                            <label id="email">Email</label>
+                            <input type="email" pattern="+@+" required>
+                            <label id="date">Date of Birth</label>
+                            <input type="date">
+                            <label id="phone">Phone</label>
+                            <input type="number">
+                            <label id="city">City and Country</label>
+                            <input type="text">
+                            <label id="direction">Your Postal Code</label>
+                            <input type="text">
+                            <label id="text">Gender</label>
+                            <select id="country" name="country">
+                            <option value="australia">Male</option>
+                            <option value="canada">Female</option>
+                            <option value="usa">Other</option>
+                            </select>
+                            <label id="mensaje">Message</label>
+                            <textarea></textarea>
+                            <input type="submit" value="SUBMIT">
+                        </form>
+                    </div>
+            </aside>
+        </div>
+  
+    <!-- Footer-->
+   <div id="c_pie">
+  <div class="boton">
+    <button class="menudrop">Product examples</button>
+    <div class="boton-content">
+      <a href="#">Cavalry saber</a>
+      <a href="#">Mounting boots</a>
+      <a href="#">Harnesses and others</a>
+    </div>
+  </div>
+  <div id="pie" class="centrado">
+    <div class="col">
+      <h4>© Sabre Studios. All Rights Reserved</h4>
+      <img src="img/general/sabres.png" alt="Sword">
+    </div>
+    <div class="col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index_.html">// Home</a></li>
+        <li><a href="about.html">// About</a></li>
+        <li><a href="contact.html">// Contact</a></li>
+        <li><a href="gallery.html">// Gallery</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="index_.html">// Blog</a></li>
+        <li><a href="https://www.facebook.com/">// Facebook</a></li>
+        <li><a href="https://www.twitter.com/">// Twitter</a></li>
+        <li><a href="https://www.instagram.com">// Instagram</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <p>C/ de José María Haro, 63, 46022 València, Valencia<br>
+        <a href="tel:961206105">// p. 961 20 61 05</a> // <a href="mailto:hello@scarletstudio.com">e. hello@scarletstudio.com</a>
+      </p>
+      <div id="book" class="bookmark">
+        <p><a href='#contenido'>↑ Go up! ↑</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+        </body> 
+</html>

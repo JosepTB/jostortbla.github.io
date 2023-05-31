@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Metadata, common styles & index styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/common_styles.css">
+    <link rel="stylesheet" href="CSS/about_styles.css">
+</head>
+<body>
+    <!-- HTML header -->
+    <div id="c_contenido">
+    <div id="contenido">   
+        <div id="cabecera">
+            <img src="img/general/logo.png" id="husar" alt="An hussar head with a shako and a big moustache"> 
+            <a href=""></a>
+            <ul>
+                <li class="col-2 col-s-2"><a href="index.html">HOME</a></li>
+                <li class="col-2 col-s-2"><a href="about.html">ABOUT</a></li>
+                <li class="col-2 col-s-2"><a href="contact.html">CONTACT</a></li>
+                <li class="col-2 col-s-2"><a href="gallery.html">GALLERY</a></li>
+            </ul>
+             <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    </div>
+                         <!-- Sidebar -->
+                <div id="main">
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="gallery.html">GALLERY</a>
+</div>
+ <!-- Script -->
+  <script>
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}</script>
+</div>
+             <div id="test" class="col-12 col-s-12 section">
+
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+// Imprent
+if (document.getElementById('p12').checked==true) {p1=1}
+else {p1=0}
+// Flame
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+// Calendar
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+// Charriot
+if (document.getElementById('p42').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert("Has tenido un total de... " + nota + " aciertos.");
+}
+</script>
+<table id="demo">
+</table>
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+myFunction(this);
+}
+};
+
+xmlhttp.open("GET", "about.xml" , true);
+xmlhttp.send();
+function myFunction(xml) {
+var x, i, xmlDoc, table;
+xmlDoc = xml.responseXML;
+table = "<tr><th>Rider</th><th>Name</th><th>Race</th><th>Colour</th></tr>";
+
+x = xmlDoc.getElementsByTagName("cavalry");
+
+for (i = 0; i < x.length; i++) {
+table +="<tr><td>" +
+x[i].getElementsByTagName("rider")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("horse")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("race")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("colour")[0].childNodes[0].nodeValue +
+"</td></tr>";
+}
+document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+  <table>
+    <thead>
+        <tr>
+            <th colspan="2">Names of their horses</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Image</td>
+            <td>Ronald</td>
+            </tr>
+            <tr>
+                <td>Second Image</td>
+                <td>Battou</td>
+            </tr>
+            <tr>
+                <td>Third Image</td>
+                <td>Sacrebleu</td>
+            </tr>
+    <tr>
+                <td>Fourth Image</td>
+                <td>Cherrypicker</td>
+            </tr>
+  <tr>
+                <td>Fifth Image</td>
+                <td>Kempes</td>
+            </tr>
+  <tr>
+                <td>Sixth Image</td>
+                <td>Maraviglio</td>
+            </tr> 
+ <tr>
+                <td>Seventh Image</td>
+                <td>Chamois</td>
+            </tr>
+    </tbody>
+</table>
+
+<div id="textotest"><h1>Aptitude test</h1><h2>Please, mind that the answers you selected on the test will disappear once you submit them.</h2>
+<p class="col-12 col-s-12">Take care! You need to mark the button left of your answer to get it correctly validated!</p></div>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>In what year was the first movable type printing press set up?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> 1315, Ramón Llull</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p12"> 1450, Guttenberg (Correct)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> 2001, Stanley Kubrick</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> 1000, Pope Silvester II</p>
+ 
+<p>What is the name of the colorful piece of cloth that the hussars wear in their shakos?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Littlefire</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> Flame (Correct)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Piece of cloth</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Napoleonide</p>
+ 
+<p>What month does not belong to the French republican calendar?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> Termidor</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Floreal</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> Liminal (Correct)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> Brumarie</p>
+ 
+<p>From which transport did the god Phaethon fall from according to Greek mythology?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> A baby walker</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p42"> His father chariot (Correct)</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> A bicycle</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> A little donkey</p>
+<hr>
+<p><input type="button" id="boton" value="RESULTADO" onclick="resultado()">
+</p>
+<p id="result"></p>
+
+</form>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+// Imprenta
+if (document.getElementById('p12').checked==true) {p1=1}
+else {p1=0}
+// Flama
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+// Calendario
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+// Carro
+if (document.getElementById('p42').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+  mensaje = "<h3>Your answers:</h3>";
+  mensaje += "<p>Answer 1: ";
+  if (p1 == 1) {
+    mensaje += "Correct</p>";
+  } else {
+    mensaje += "Incorrect</p>";
+  }
+  mensaje += "<p>Answer 2: ";
+  if (p2 == 1) {
+    mensaje += "Correct</p>";
+  } else {
+    mensaje += "Incorrect</p>";
+  }
+  mensaje += "<p>Answer 3: ";
+  if (p3 == 1) {
+    mensaje += "Correct</p>";
+  } else {
+    mensaje += "Incorrect</p>";
+  }
+  mensaje += "<p>Pregunt 4: ";
+  if (p4 == 1) {
+    mensaje += "Correct</p>";
+  } else {
+    mensaje += "Incorrect</p>";
+  }
+  mensaje += "<h3>You had a total of " + nota + " right guesses.</h3>";
+  
+  // Show the message
+  document.getElementById("result").innerHTML = mensaje;
+}
+</script>
+        </div> </div>  
+    <!-- Footer-->
+   <div id="c_pie">
+  <div class="boton">
+    <button class="menudrop">Product examples</button>
+    <div class="boton-content">
+      <a href="#">Cavalry saber</a>
+      <a href="#">Mounting boots</a>
+      <a href="#">Harnesses and others</a>
+    </div>
+  </div>
+  <div id="pie" class="centrado">
+    <div class="col">
+      <h4>© Sabre Studios. All Rights Reserved</h4>
+      <img src="img/general/sabres.png" alt="Sword">
+    </div>
+    <div class="col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index_.html">// Home</a></li>
+        <li><a href="about.html">// About</a></li>
+        <li><a href="contact.html">// Contact</a></li>
+        <li><a href="gallery.html">// Gallery</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="index_.html">// Blog</a></li>
+        <li><a href="https://www.facebook.com/">// Facebook</a></li>
+        <li><a href="https://www.twitter.com/">// Twitter</a></li>
+        <li><a href="https://www.instagram.com">// Instagram</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <p>C/ de José María Haro, 63, 46022 València, Valencia<br>
+        <a href="tel:961206105">// p. 961 20 61 05</a> // <a href="mailto:hello@scarletstudio.com">e. hello@scarletstudio.com</a>
+      </p>
+      <div id="book" class="bookmark">
+        <p><a href='#contenido'>↑ Go up! ↑</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+        </body>   
+</html>
+  <!-- Thank you for stepping by -->
